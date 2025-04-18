@@ -1,6 +1,6 @@
 ---
 title: Hello World
-date: '2024-04-18'
+date: 2025-04-18T21:56:13.224325400+0900
 description: 'Welcome to my first blog post!'
 ---
 

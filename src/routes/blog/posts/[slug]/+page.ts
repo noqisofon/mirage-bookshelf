@@ -1,31 +1,31 @@
 interface Post {
-  title: string;
-  date: string;
-  description: string;
+	title: string;
+	date: string;
+	description: string;
 }
 
 interface PostModule {
-  metadata: Post;
-  default: any;
+	metadata: Post;
+	default: any;
 }
 
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ params }: { params: { slug: string } }) => {
-  const posts = import.meta.glob<PostModule>('/src/routes/blog/posts/*.md', { eager: true });
-  const path = Object.keys(posts).find(path => path.includes(params.slug));
-  
-  if (!path) {
-    throw new Error(`Post not found: ${params.slug}`);
-  }
+	const posts = import.meta.glob<PostModule>('/src/routes/blog/posts/*.md', { eager: true });
+	const path = Object.keys(posts).find((path) => path.includes(params.slug));
 
-  const post = posts[path];
-  const { metadata } = post;
+	if (!path) {
+		throw new Error(`Post not found: ${params.slug}`);
+	}
 
-  return {
-    post: {
-      ...metadata,
-      content: post.default
-    }
-  };
-}; 
+	const post = posts[path];
+	const { metadata } = post;
+
+	return {
+		post: {
+			...metadata,
+			content: post.default
+		}
+	};
+};
