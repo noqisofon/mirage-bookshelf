@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+/* @plugin '@tailwindcss/typography'; */
 
 @tailwind base;
 @tailwind components;
@@ -6,31 +7,31 @@
 
 @layer base {
     body {
-        @apply bg-white text-black font-gothic;
+        @apply bg-white text-black font-['Noto_Sans_JP'];
     }
     
     /* Markdown heading styles */
     h1 {
-        @apply text-4xl font-bold mb-6 mt-8 font-mincho;
+        @apply text-4xl font-bold mb-6 mt-8 font-['Zen_Old_Mincho'];
     }
     
     h2 {
-        @apply text-3xl font-semibold mb-4 mt-6 font-mincho;
+        @apply text-3xl font-semibold mb-4 mt-6 font-['Zen_Old_Mincho'];
     }
     
     h3 {
-        @apply text-2xl font-medium mb-3 mt-5 font-mincho;
+        @apply text-2xl font-medium mb-3 mt-5 font-['Zen_Old_Mincho'];
     }
     
     h4 {
-        @apply text-xl font-medium mb-2 mt-4 font-mincho;
+        @apply text-xl font-medium mb-2 mt-4 font-['Zen_Old_Mincho'];
     }
     
     h5 {
-        @apply text-lg font-medium mb-2 mt-3 font-mincho;
+        @apply text-lg font-medium mb-2 mt-3 font-['Zen_Old_Mincho'];
     }
     
     h6 {
-        @apply text-base font-medium mb-2 mt-3 font-mincho;
+        @apply text-base font-medium mb-2 mt-3 font-['Zen_Old_Mincho'];
     }
 }
