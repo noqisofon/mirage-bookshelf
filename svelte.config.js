@@ -8,8 +8,14 @@ const config = {
 		adapter: adapter({
 			routes: {
 				include: ['/*'],
-				exclude: []
-			}
+				exclude: ['<all>']
+			},
+            platformProxy: {
+                configPath: 'wrangler.toml',
+                environment: undefined,
+                experimentalJsonConfig: false,
+                persist: false
+            }
 		})
 	},
 	extensions: ['.svelte', '.md'],
