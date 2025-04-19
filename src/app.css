@@ -8,4 +8,29 @@
     body {
         @apply bg-white text-black;
     }
+    
+    /* Markdown heading styles */
+    h1 {
+        @apply text-4xl font-bold mb-6 mt-8;
+    }
+    
+    h2 {
+        @apply text-3xl font-semibold mb-4 mt-6;
+    }
+    
+    h3 {
+        @apply text-2xl font-medium mb-3 mt-5;
+    }
+    
+    h4 {
+        @apply text-xl font-medium mb-2 mt-4;
+    }
+    
+    h5 {
+        @apply text-lg font-medium mb-2 mt-3;
+    }
+    
+    h6 {
+        @apply text-base font-medium mb-2 mt-3;
+    }
 }
