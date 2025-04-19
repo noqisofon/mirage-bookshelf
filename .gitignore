@@ -3,6 +3,9 @@
 *~
 \#*#
 
+# dry tools
+.tools/
+
 node_modules
 
 # Output
