@@ -4,27 +4,27 @@ import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: {
-		adapter: adapter({
-			routes: {
-				include: ['/*'],
-				exclude: ['<all>']
-			},
+    kit: {
+        adapter: adapter({
+            routes: {
+                include: ['/*'],
+                exclude: ['<all>']
+            },
             platformProxy: {
                 configPath: 'wrangler.toml',
                 environment: undefined,
                 experimentalJsonConfig: false,
                 persist: false
             }
-		})
-	},
-	extensions: ['.svelte', '.md'],
-	preprocess: [
-		vitePreprocess(),
-		mdsvex({
-			extensions: ['.md']
-		})
-	]
+        })
+    },
+    extensions: ['.svelte', '.md'],
+    preprocess: [
+        vitePreprocess(),
+        mdsvex({
+            extensions: ['.md']
+        })
+    ]
 };
 
 export default config;

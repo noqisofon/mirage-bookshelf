@@ -23,6 +23,6 @@ date: 2025-04-17T21:40:33.454759400+0900
 @import '@tailwindcss/typography';
 
 .prose {
-	@apply prose-p:text-parchment prose-h2:text-goldleaf prose-blockquote:text-candle prose-a:text-candle prose-a:underline;
+  @apply prose-p:text-parchment prose-h2:text-goldleaf prose-blockquote:text-candle prose-a:text-candle prose-a:underline;
 }
 ```

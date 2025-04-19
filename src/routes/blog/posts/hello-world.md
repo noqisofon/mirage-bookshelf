@@ -31,8 +31,8 @@ UFO研究家の佐藤博士は「この光球の動きは、既知の自然現�
 ```javascript
 // 光球の動きをシミュレーションするコード
 function simulateLightSphere() {
-	console.log('光球が出現しました');
-	// 光球の動きをシミュレーション
+  console.log('光球が出現しました');
+  // 光球の動きをシミュレーション
 }
 ```
 
