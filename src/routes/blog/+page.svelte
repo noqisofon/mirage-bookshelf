@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>Blog Posts</title>
+	<title>うぃーくりー・あんだーわーるど・にゅーす - Blog Posts</title>
 </svelte:head>
 
 <div class="mx-auto max-w-4xl">
