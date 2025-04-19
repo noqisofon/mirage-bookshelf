@@ -2,7 +2,13 @@
 export default {
     content: ['./src/**/*.{html,js,svelte,ts,md}'],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                sans: ['Zen Old Mincho', 'serif'],
+                mincho: ['Zen Old Mincho', 'serif'],
+                gothic: ['Noto Sans JP', 'sans-serif'],
+            },
+        },
         colors: {
             zinc: {
                 50: '#fafafa',
