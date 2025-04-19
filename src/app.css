@@ -42,4 +42,18 @@
     h6 {
         @apply text-base font-medium mb-2 mt-3 font-mincho;
     }
+    
+    /* Code block styles */
+    pre {
+        @apply p-4 rounded-lg overflow-x-auto my-4;
+    }
+    
+    code {
+        @apply font-mono text-sm;
+    }
+    
+    /* Inline code */
+    p code, li code {
+        @apply bg-gray-100 dark:bg-gray-800 px-1 py-0.5 rounded;
+    }
 }
