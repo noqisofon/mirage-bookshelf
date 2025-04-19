@@ -6,8 +6,8 @@ export default {
             fontFamily: {
                 sans: ['Zen Old Mincho', 'serif'],
                 mincho: ['Zen Old Mincho', 'serif'],
-                gothic: ['Noto Sans JP', 'sans-serif'],
-            },
+                gothic: ['Noto Sans JP', 'sans-serif']
+            }
         },
         colors: {
             zinc: {

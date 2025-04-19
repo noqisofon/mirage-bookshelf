@@ -1,12 +1,12 @@
 @import 'tailwindcss';
 /* @plugin '@tailwindcss/typography'; */
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700&display=swap');
 
 @theme {
     --font-sans: 'Noto Sans JP', 'sans-serif';
     --font-mincho: 'Zen Old Mincho', 'serif';
-    --font-gothic: 'Noto Sans JP', 'sans-serif'
+    --font-gothic: 'Noto Sans JP', 'sans-serif';
 }
 
 @tailwind base;
@@ -15,45 +15,46 @@
 
 @layer base {
     body {
-        @apply bg-white text-black font-sans;
+        @apply bg-white font-sans text-black;
     }
-    
+
     /* Markdown heading styles */
     h1 {
-        @apply text-4xl font-bold mb-6 mt-8 font-mincho;
+        @apply font-mincho mt-8 mb-6 text-4xl font-bold;
     }
-    
+
     h2 {
-        @apply text-3xl font-semibold mb-4 mt-6 font-mincho;
+        @apply font-mincho mt-6 mb-4 text-3xl font-semibold;
     }
-    
+
     h3 {
-        @apply text-2xl font-medium mb-3 mt-5 font-mincho;
+        @apply font-mincho mt-5 mb-3 text-2xl font-medium;
     }
-    
+
     h4 {
-        @apply text-xl font-medium mb-2 mt-4 font-mincho;
+        @apply font-mincho mt-4 mb-2 text-xl font-medium;
     }
-    
+
     h5 {
-        @apply text-lg font-medium mb-2 mt-3 font-mincho;
+        @apply font-mincho mt-3 mb-2 text-lg font-medium;
     }
-    
+
     h6 {
-        @apply text-base font-medium mb-2 mt-3 font-mincho;
+        @apply font-mincho mt-3 mb-2 text-base font-medium;
     }
-    
+
     /* Code block styles */
     pre {
-        @apply p-4 rounded-lg overflow-x-auto my-4;
+        @apply my-4 overflow-x-auto rounded-lg p-4;
     }
-    
+
     code {
         @apply font-mono text-sm;
     }
-    
+
     /* Inline code */
-    p code, li code {
-        @apply bg-gray-100 dark:bg-gray-800 px-1 py-0.5 rounded;
+    p code,
+    li code {
+        @apply rounded bg-gray-100 px-1 py-0.5 dark:bg-gray-800;
     }
 }

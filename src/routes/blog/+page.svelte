@@ -1,6 +1,7 @@
 <script lang="ts">
   /** @type {import('./$types').PageData} */
   export let data;
+  import { format } from 'date-fns';
 </script>
 
 <svelte:head>
@@ -19,7 +20,7 @@
           </a>
         </h2>
         <div class="mb-4 text-gray-600 dark:text-gray-400">
-          {new Date(post.date).toLocaleString('ja-JP', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false }).replace(/\//g, '-').replace(',', 'T')}
+          {format(new Date(post.date), "yyyy-MM-dd'T'HH:mm")}
         </div>
         <p class="text-gray-700 dark:text-gray-300">
           {post.description}
