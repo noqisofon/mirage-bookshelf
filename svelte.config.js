@@ -5,18 +5,7 @@ import { mdsvex } from 'mdsvex';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
     kit: {
-        adapter: adapter({
-            routes: {
-                include: ['/*'],
-                exclude: ['<all>']
-            },
-            platformProxy: {
-                configPath: 'wrangler.toml',
-                environment: undefined,
-                experimentalJsonConfig: false,
-                persist: false
-            }
-        })
+        adapter: adapter()
     },
     extensions: ['.svelte', '.md'],
     preprocess: [
