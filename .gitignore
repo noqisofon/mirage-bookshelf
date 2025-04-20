@@ -6,7 +6,11 @@
 # dry tools
 .tools/
 
-node_modules
+# WinMerge backup file
+*.bak
+
+# NPM modules blackhole directory
+node_modules/
 
 # Output
 .output
