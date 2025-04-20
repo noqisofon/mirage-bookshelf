@@ -17,9 +17,9 @@
     {#if data.post.tags && data.post.tags.length > 0}
       <div class="mt-2 flex flex-wrap gap-2">
         {#each data.post.tags as tag}
-          <span class="rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-700 dark:bg-gray-700 dark:text-gray-300">
+          <a href="/blog/tags/{tag}" class="rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-700 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
             {tag}
-          </span>
+          </a>
         {/each}
       </div>
     {/if}
