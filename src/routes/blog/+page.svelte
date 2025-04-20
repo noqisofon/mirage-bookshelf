@@ -25,6 +25,15 @@
         <p class="text-gray-700 dark:text-gray-300">
           {post.description}
         </p>
+        {#if post.tags && post.tags.length > 0}
+          <div class="mt-2 flex flex-wrap gap-2">
+            {#each post.tags as tag}
+              <span class="rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-700 dark:bg-gray-700 dark:text-gray-300">
+                {tag}
+              </span>
+            {/each}
+          </div>
+        {/if}
       </article>
     {/each}
   </div>

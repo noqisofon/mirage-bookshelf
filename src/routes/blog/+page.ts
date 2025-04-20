@@ -3,6 +3,7 @@ interface Post {
     date: string;
     description: string;
     slug: string;
+    tags?: string[];
 }
 
 interface PostModule {
