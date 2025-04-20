@@ -11,6 +11,19 @@ export default defineConfig({
         coverage: {
             reporter: ['text', 'json', 'html'],
             exclude: ['node_modules/', 'vitest.setup.ts']
+        },
+        deps: {
+            optimizer: {
+                web: {
+                    include: ['svelte']
+                }
+            }
+        },
+        browser: {
+            enabled: true,
+            headless: true,
+            provider: 'playwright',
+            name: 'chromium'
         }
     }
 });
