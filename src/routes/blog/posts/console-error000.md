@@ -2,7 +2,7 @@
 title: なんかコンソールエラーが出る
 date: 2024-12-05 23:46:11.341863700+0900
 author:
-    name: Ned Rihine
+  name: Ned Rihine
 ---
 
 ハイドレーションって何…？

@@ -55,7 +55,7 @@
     /* Inline code */
     p code,
     li code {
-        @apply bg-gray-100 dark:bg-gray-800 px-1 py-0.5 rounded;
+        @apply rounded bg-gray-100 px-1 py-0.5 dark:bg-gray-800;
     }
 
     /* Paragraph styles */

@@ -38,7 +38,10 @@
           {#if post.tags && post.tags.length > 0}
             <div class="mt-2 flex flex-wrap gap-2">
               {#each post.tags as tag}
-                <a href="/blog/tags/{tag}" class="rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-700 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+                <a
+                  href="/blog/tags/{tag}"
+                  class="rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-700 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
+                >
                   {tag}
                 </a>
               {/each}
@@ -48,4 +51,4 @@
       {/each}
     </div>
   {/if}
-</div> 
+</div>

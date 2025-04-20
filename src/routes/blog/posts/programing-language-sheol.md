@@ -1,12 +1,12 @@
 ---
-title: "プログラミング言語 Sheol"
+title: 'プログラミング言語 Sheol'
 date: 2021-05-01T00:00:00+09:00
 draft: false
 ---
 
 Limbo をインスパイアしたプログラミング言語 Sheol のへろーわーるど:
 
-``` text
+```text
 include "sys.shl" as Sys;
 include "draw.shl";
 
@@ -23,7 +23,7 @@ init(self : ref Draw.Context, argv : list[string]) {
 
 ここで Sys モジュールをロード:
 
-``` text
+```text
 sys = load Sys;
 ```
 
@@ -33,15 +33,15 @@ sys = load Sys;
 
 じゃあこれはなんなのかっていうと:
 
-``` text
+```text
 include "sys.shl" as Sys;
 ```
 
-`sys.shl` をインクルードしている。 
+`sys.shl` をインクルードしている。
 
 `sys.shl` は多分こういう感じの内容で:
 
-``` text
+```text
 module Sys {
     print(format_or_value : string, ...);
 }
@@ -51,6 +51,6 @@ module Sys {
 
 それだったら、以下のようにしても良いんじゃないかって思うけど......。
 
-``` text
+```text
 Sys = load 'sys.shlm';
 ```

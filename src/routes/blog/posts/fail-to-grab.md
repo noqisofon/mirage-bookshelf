@@ -5,7 +5,7 @@ draft: false
 section: groovy
 ---
 
-``` groovy
+```groovy
 @Grab(group='org.openjfx', module='javafx-base', version='19')
 import javafx.application.Application
 ```
@@ -62,7 +62,7 @@ Caused by: java.lang.ClassNotFoundException: org.apache.ivy.util.MessageLogger
 
 以下のように修正しても、ダメっぽかった。
 
-``` groovy
+```groovy
 @Grab(group='org.apache.ivy', module='ivy', version='2.5.1')
 @Grab(group='org.openjfx', module='javafx-base', version='19')
 import javafx.application.Application
@@ -71,7 +71,7 @@ import javafx.application.Application
 `@Grab` を使う時に `ivy` を使うため、 `ivy` の `MessageLogger`
 クラスが見つからないので多分ダメなのだろう。
 
-``` groovy
+```groovy
 @Grab(group='org.apche.commons', module='commons-lang3', version='3.1')
 import org.apache.commons.lang3.StringUtils
 
@@ -80,7 +80,7 @@ println StringUtils.join( args, ', ' )
 
 もちろん、このコードでも同じ。
 
-``` groovy
+```groovy
 @GrabConfig(systemClassLoader=true)
 @Grab(group='org.openjfx', module='javafx-base', version='19')
 import javafx.application.Application

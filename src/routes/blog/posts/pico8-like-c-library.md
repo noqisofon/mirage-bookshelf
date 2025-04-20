@@ -1,5 +1,5 @@
 ---
-title: "PICO-8 っぽい C ライブラリ"
+title: 'PICO-8 っぽい C ライブラリ'
 date: 2021-05-17T08:35:57+09:00
 draft: false
 ---
@@ -12,14 +12,14 @@ draft: false
 
 とりあえず、サンプルコード？で見た関数をそのまま宣言したのを書いておく:
 
-``` c
+```c
 /*!
  * 画面をまっさらにします。
  */
 PYC_API void cls(void);
 ```
 
-``` c
+```c
 /*!
  * 画面の (x, y) の位置に指定された色番号 color_no のピクセルを表示します。
  *
@@ -32,7 +32,7 @@ PYC_API void cls(void);
 PYC_API int32_t pset(int32_t x, int32_t y, int32_t color_no);
 ```
 
-``` c
+```c
 /*!
  * 指定された番号のスプライトを画面の指定された位置(x, y)に表示します。
  *

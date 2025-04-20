@@ -1,12 +1,12 @@
 ---
-title: "Perl からログを出力する方法"
+title: 'Perl からログを出力する方法'
 date: 2021-02-11T00:00:00+09:00
 draft: true
 ---
 
 Perl のすくりぷよから最も簡単にログを吐くには、組み込み関数の warn を使うよ！
 
-``` perl
+```perl
 warn 'request timeout';
 ```
 

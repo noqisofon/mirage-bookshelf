@@ -1,5 +1,5 @@
 ---
-title: "require って何なの？"
+title: 'require って何なの？'
 date: 2020-10-02T00:00:00+09:00
 draft: false
 section: lisp
@@ -7,6 +7,6 @@ section: lisp
 
 `ql:quickload` した後は `require` できるらしい。
 
-``` lisp
+```lisp
   (require :cl-charms)
 ```

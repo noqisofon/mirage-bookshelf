@@ -1,6 +1,6 @@
 ---
 title: gatsby develop するとエラる
-date: 2024-12-08 08:29:31.462703100+0900
+date: 2024-12-08T08:29:31.462703100+0900
 ---
 
 エラる…。
@@ -18,4 +18,3 @@ date: 2024-12-08 08:29:31.462703100+0900
 
     - node.cjs:1151 Packr.encodeUtf8
     [siofrey-hill]/[msgpackr]/dist/node.cjs:1151:18
-

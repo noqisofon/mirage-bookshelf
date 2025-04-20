@@ -1,5 +1,5 @@
 ---
-title: "Fluff 言語入門"
+title: 'Fluff 言語入門'
 date: 2020-10-16T00:00:00+09:00
 draft: false
 ---
@@ -8,9 +8,9 @@ draft: false
 
 # 概要
 
--　Fluff は FLVM という仮想マシンの上で動くよ！(そのはず)
--　Fluff タイプ・チェッカーっていうのがあるよ！(Fluff パッケージ/ビルドに含まれているはず)
--  オプションで Fluff 対応エディタ、 vscode-fluff がインストールされた VSCode がオススメ(したい)
+-　Fluff は FLVM という仮想マシンの上で動くよ！(そのはず) -　Fluff タイプ・チェッカーっていうのがあるよ！(Fluff パッケージ/ビルドに含まれているはず)
+
+- オプションで Fluff 対応エディタ、 vscode-fluff がインストールされた VSCode がオススメ(したい)
 
 # 最初の Fluff コード
 
@@ -35,7 +35,7 @@ Fluff をインストールすると Fluff タイプ・チェッカーが使用�
 
 あなたがお好きなテキストエディタ(Emacs、Vim、VSCode などで)を使用して次のコードで `first.fl` というファイルを作成しましょう:
 
-``` fluff
+```fluff
 namespace Fluff::GettingStarted::MyFirstProgram;
 
 [__EntryPoint__]
@@ -60,7 +60,7 @@ function main() : void {
 
 - このコードは `Fluff::GettingStarted::MyFirstProgram` という一意の任意の名前空間に属しています。
 - `main` は引数を持たない関数であり、戻り値の型は `void` であるため、値を返しません。
-    更にこの関数はプログラムが実行を開始する場所です。つまり、 `main` はエントリ関数です。
+  更にこの関数はプログラムが実行を開始する場所です。つまり、 `main` はエントリ関数です。
 - `say` は文字列と改行を標準出力に書き込みます。
 - `printf` も標準出力に書き込みますが、この場合、整数列を右揃えにするためのフォーマット制御を提供します。
 - `for` ループの変数 `i` は -5 から 1 ずつ加算されて最終的には 5 になり、反復ごとに `i` の値とその 2 乗された値が別々の行に一緒に書き出されます。
@@ -70,13 +70,13 @@ function main() : void {
 VSCode で `vscode-fluff` を使用している場合などはコードを書く時にタイプ・チェック情報が表示されます。(多分)
 コマンドラインからタイプ・チェッカーを実行する場合、コマンドは次のとおりです:
 
-``` text
+```text
 $ fl-analyzer ./first.fl
 ```
 
 するとこのように表示されます:
 
-``` text
+```text
 Syntax OK
 ```
 
@@ -84,13 +84,13 @@ Syntax OK
 
 コードをエラーなしでタイプ・チェック・クリーンにした後、次のようにコードを実行することができます:
 
-``` text
+```text
 $ fluff ./first.fl
 ```
 
 出力は次のとおりです:
 
-``` text
+```text
 Welcome to Fluff!
 
 Table of Squares

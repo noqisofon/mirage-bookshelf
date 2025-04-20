@@ -1,5 +1,5 @@
 ---
-title: "Scoop の SBCL を使用する"
+title: 'Scoop の SBCL を使用する'
 date: 2021-05-20T08:45:04+09:00
 draft: false
 ---
@@ -15,8 +15,8 @@ Scoop で SBCL をインストールしても、sbcl
 既定のところに Scoop
 をインストールしていれば、以下のようなスクリプトでコアファイルを作成できるはず:
 
-``` shell-script
-[ ! -d $HOME/.sbcl ] && mkdir -p $HOME/.sbcl 
+```shell-script
+[ ! -d $HOME/.sbcl ] && mkdir -p $HOME/.sbcl
 
 sbcl --core /c/ProgramData/Scoop/apps/sbcl/current/sbcl.core --noinform --no-print --no-userinit <<EOF
 ; loading asdf and asdf-install library
@@ -32,7 +32,7 @@ EOF
 
 これでコアファイルはできたので、以下のようなハローワールド系コードを実行してみよう:
 
-``` commonlisp
+```commonlisp
 (write-line "Hello, World!")
 ```
 
@@ -55,7 +55,7 @@ EOF
 
 上記の例で言えば、以下のようにすれば、 `--core` オプションの指定が不必要になる:
 
-``` shell-script
+```shell-script
 export SBCL_HOME=$HOME/.sbcl
 ```
 

@@ -9,14 +9,14 @@ draft: false
 
 PowerShell を起動し、以下のように打つ:
 
-``` powershell
+```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
 
 インストールできたら、とりあえずバージョンを表示してみる:
 
-``` powershell
+```powershell
 scoop --version
 ```
 
@@ -26,7 +26,7 @@ scoop --version
 
 `pandoc` をインストールしてみると良いんじゃないかなぁ。
 
-``` powershell
+```powershell
 scoop install pandoc
 ```
 
@@ -36,6 +36,6 @@ scoop install pandoc
 
 `extra` を追加するには以下のように打つよ:
 
-``` powershell
+```powershell
 scoop add bucket extras
 ```

@@ -1,5 +1,5 @@
 ---
-title: "cl-charms がいんすとろーるできない"
+title: 'cl-charms がいんすとろーるできない'
 date: 2020-10-02T00:00:00+09:00
 draft: false
 tags: ['lisp']
@@ -29,13 +29,13 @@ tags: ['lisp']
 
 `pkg-config` からもわかるように
 
-``` c
+```c
 #include <ncursesw/ncurses.h>
 ```
 
 ってやらなくちゃいけないっていうか、 `pkg-config` つこおてるんだったら
 
-``` c
+```c
 #include <ncurses.h>
 ```
 

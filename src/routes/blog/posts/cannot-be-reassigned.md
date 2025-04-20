@@ -1,12 +1,12 @@
 ---
-title: "定数の初期化の話"
+title: '定数の初期化の話'
 date: 2020-09-30T00:00:00+09:00
 draft: false
 ---
 
 この辺こんな風に(キーワードは違うにせよ)書ける言語もあるんだけど、JS はダメなのよね。
 
-``` javascript
+```javascript
 const x;
 if (cond) {
     // 一回だけ代入可
@@ -20,13 +20,13 @@ if (cond) {
 たしかに。  
 上記しかなかったら、こういう風に書くよね:
 
-``` javascript
+```javascript
 const x = cond ? hoge : fuga;
 ```
 
 Scheme だとこういう風に書ける:
 
-``` scheme
+```scheme
 (define-constant x (if *cond*
                        hoge
                      fuga))

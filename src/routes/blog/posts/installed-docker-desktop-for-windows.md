@@ -1,5 +1,5 @@
 ---
-title: "Docker Descktop for Windows をインストールしてみた"
+title: 'Docker Descktop for Windows をインストールしてみた'
 date: 2020-10-17T00:00:00+09:00
 draft: false
 ---
@@ -9,7 +9,7 @@ draft: false
 
 WSL2 をバックエンドとして Docker Descktop for Windows を実行していると、WSL のディストリビューション一覧は以下のようになるらしい:
 
-``` text
+```text
 PS C:\Users\alice> wsl -l -v
   NAME                   STATE           VERSION
 * Debian                 Running         2
@@ -23,7 +23,7 @@ PS C:\Users\alice> wsl -l -v
 
 `docker pull` でイメージを引っこ抜いてきて、 `docker run` でイメージを実行する感じなんだろうか...。
 
-``` text
+```text
 PS C:\Users\alice> docker pull amazonlinux
 Using default tag: latest
 latest: Pulling from library/amazonlinux
@@ -49,7 +49,7 @@ recipe_id="17c5a58e-d7e0-fa2e-e80a-ccb0-2623-a6a5-fa48d402"
 
 Docker コンテナの実行状態？は `ps` サブコマンドで確認できるらしい:
 
-``` text
+```text
 PS C:\Users\alice> docker ps -a
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                          PORTS               NAMES
 c31352b5b45b        amazonlinux         "/bin/bash"         4 minutes ago       Exited (0) About a minute ago                       awesome_lederberg

@@ -12,12 +12,17 @@
   <header class="mb-8">
     <h1 class="mb-2 text-4xl font-bold">{data.post.title}</h1>
     <div class="text-gray-600 dark:text-gray-400">
-      {format(new Date(data.post.date), "yyyy-MM-dd'T'HH:mm")}
+      {#if data.post.date}
+        {format(new Date(data.post.date), "yyyy-MM-dd'T'HH:mm")}
+      {/if}
     </div>
     {#if data.post.tags && data.post.tags.length > 0}
       <div class="mt-2 flex flex-wrap gap-2">
         {#each data.post.tags as tag}
-          <a href="/blog/tags/{tag}" class="rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-700 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+          <a
+            href="/blog/tags/{tag}"
+            class="rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-700 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
+          >
             {tag}
           </a>
         {/each}

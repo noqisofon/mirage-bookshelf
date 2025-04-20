@@ -1,15 +1,4 @@
-interface Post {
-    title: string;
-    date: string;
-    description: string;
-    tags?: string[];
-}
-
-interface PostModule {
-    metadata: Post;
-    default: any;
-}
-
+import type { Post, PostModule } from '$lib/types';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ params }: { params: { slug: string } }) => {
@@ -26,6 +15,7 @@ export const load: PageLoad = async ({ params }: { params: { slug: string } }) =
     return {
         post: {
             ...metadata,
+            date: metadata.date ? new Date(metadata.date) : null,
             content: post.default
         }
     };
