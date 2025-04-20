@@ -2,6 +2,7 @@
   /** @type {import('./$types').PageData} */
   export let data;
   import { format } from 'date-fns';
+  import Pagination from '$lib/components/Pagination.svelte';
 </script>
 
 <svelte:head>
@@ -43,30 +44,13 @@
     {/each}
   </div>
 
-  <!-- Pagination Navigation -->
   {#if data.pagination.totalPages > 1}
-    <div class="mt-8 flex justify-center space-x-4">
-      {#if data.pagination.hasPrevPage}
-        <a
-          href="/blog?page={data.pagination.prevPage}"
-          class="rounded-md bg-gray-200 px-4 py-2 text-gray-700 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
-        >
-          前のページ
-        </a>
-      {/if}
-
-      <span class="flex items-center px-4 py-2">
-        ページ {data.pagination.currentPage} / {data.pagination.totalPages}
-      </span>
-
-      {#if data.pagination.hasNextPage}
-        <a
-          href="/blog?page={data.pagination.nextPage}"
-          class="rounded-md bg-gray-200 px-4 py-2 text-gray-700 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
-        >
-          次のページ
-        </a>
-      {/if}
+    <div class="mt-8">
+      <Pagination
+        currentPage={data.pagination.currentPage}
+        totalPages={data.pagination.totalPages}
+        baseUrl="/blog"
+      />
     </div>
   {/if}
 </div>
